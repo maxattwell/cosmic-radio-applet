@@ -8,7 +8,7 @@
 
 A modern online radio player integrated into the COSMIC Desktop panel, developed exclusively for the COSMIC ecosystem using Rust and libcosmic.
 
-![Banner](resources/banner.png)
+<img src="resources/banner.png" width="400" alt="Banner">
 
 ### ✨ Features
 
@@ -53,6 +53,8 @@ This project is under the [MIT](LICENSE) license.
 ## Português
 
 Um player de rádio online moderno e integrado ao painel do COSMIC Desktop, desenvolvido exclusivamente para o ecossistema COSMIC usando Rust e libcosmic.
+
+<img src="resources/banner.png" width="400" alt="Banner">
 
 ### ✨ Funcionalidades
 

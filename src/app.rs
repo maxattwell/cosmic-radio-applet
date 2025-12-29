@@ -59,6 +59,7 @@ impl cosmic::Application for AppModel {
                 c
             }
         };
+        println!("Config loaded. Favorites: {}", config.favorites.len());
 
         let audio = AudioManager::new();
         audio.set_volume(config.volume as f32 / 100.0);
@@ -214,7 +215,9 @@ impl cosmic::Application for AppModel {
                 } else {
                     self.config.favorites.push(station);
                 }
-                let _ = self.config.write_entry(&self.config_handler);
+                if let Err(e) = self.config.write_entry(&self.config_handler) {
+                    eprintln!("Failed to save config: {:?}", e);
+                }
             }
         }
         Task::none()
